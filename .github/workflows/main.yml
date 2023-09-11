@@ -1,0 +1,20 @@
+
+name: This workflow displays file content
+run-name: run name for file content
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  display_files:
+    name: job name display file content
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+        
+      - name: display file content
+        run: |
+          cat file1.txt
+        shell: bash
