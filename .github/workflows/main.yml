@@ -3,6 +3,7 @@ name: This workflow displays file content
 run-name: run name for file content
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
