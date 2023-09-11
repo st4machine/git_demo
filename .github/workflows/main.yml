@@ -4,9 +4,6 @@ run-name: run name for file content
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
 jobs:
   display_files:
     name: job name display file content
